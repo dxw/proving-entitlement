@@ -51,8 +51,8 @@ documentationApp.use(handleCookies)
 
 // Set up configuration variables
 var releaseVersion = packageJson.version
-var username = process.env.USERNAME
-var password = process.env.PASSWORD
+// var username = process.env.USERNAME
+// var password = process.env.PASSWORD
 var env = process.env.NODE_ENV || 'development'
 var useAuth = process.env.USE_AUTH || config.useAuth
 var useAutoStoreData = process.env.USE_AUTO_STORE_DATA || config.useAutoStoreData
@@ -84,9 +84,9 @@ if (isSecure) {
 }
 
 // Ask for username and password on production
-if (env === 'production' && useAuth === 'true') {
-  app.use(utils.basicAuth(username, password))
-}
+// if (env === 'production' && useAuth === 'true') {
+//   app.use(utils.basicAuth(username, password))
+// }
 
 // Set up App
 var appViews = [
