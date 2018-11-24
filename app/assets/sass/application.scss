@@ -51,3 +51,7 @@ $govuk-global-styles: true;
     line-height: 1.14286;
     white-space: nowrap;
 }
+
+.govuk-error-summary.notification {
+    border-color: #28a197;
+}
