@@ -14,31 +14,171 @@
         <span class="govuk-caption-xl">{{releaseVersion}}</span>
       </h1>{{releaseVersion | log }}
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Please check the information below for accuracy.
       </p>
+
+    
+      <h2 class="govuk-heading-m">Personal details</h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Name
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Parent Smith
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Home address
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            72 Guild Street<br />
+            London<br />
+            SE23 6FH
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Contact details
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            07700 900457<br />
+            parent.smith@example.com
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class= "govuk-heading-m">
+        Child details
+      </h2>
+       <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Name
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Child Smith
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Date of birth
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            5 January 2003
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Sex
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Male
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> Sex</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Child reference number
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            08448340528<br />
+          </dd>
+          
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-m">
+        Account details
+      </h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Personal user code
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            502135326
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> personal user code</span>
+            </a>
+          </dd>
+        </div>
+
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Something
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            This section contains additional information that might be needed for an account<br /><br />
+            This is a second paragraph of text provided by the user.
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> something</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-m">Submission and consent</h2>
 
       <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct and give explicit consent to share the information provided with relevant bodies (??)
       </p>
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      <a class="govuk-button" href="confirmation-page" role="button">
+        Confirm details and create account
+      </a>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
-
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
-    </div>
 </div>
+
+
 
 {% endblock %}
