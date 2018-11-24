@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Past entries
+  Health Diary
 {% endblock %}
 
 {% block content %}
@@ -10,34 +10,205 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Past Entries
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
-      <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
-      </p>
+        Health Diary
+      </h1>
+    </div>
+  </div>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
 
-      <h2 class="govuk-heading-m">About this page</h2>
+      <h2 class="govuk-heading-m">View and edit you health Notess</h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
+      <div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
 
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+        Past day
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Past week
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-month">
+        Past month
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-year">
+        Past year
+      </a>
+    </li>
+  </ul>
 
-      <h2 class="govuk-heading-m">Examples and documentation</h2>
+  <section class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l">Past day</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Today, 24 November 2018</th>
+          <th class="govuk-table__header" scope="col">Notess</th>
+          <th class="govuk-table__header" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">The morning</td>
+          <td class="govuk-table__cell">Woken at 7:30. Helped out of bed...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the day</td>
+          <td class="govuk-table__cell">Helper does everything at school - toilet, moving around...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Early evening</td>
+          <td class="govuk-table__cell">I cut up all his food. Fed himself using a spoon...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the night</td>
+          <td class="govuk-table__cell">Woke at 2:10 am - helped out of bed to toilet - 15 min...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-        <li>
-          <a href="https://design-system.service.gov.uk">
-            GOV.UK Design System
-          </a>
-        </li>
-      </ul>
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l">Past week</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Yesterday, 23 November 2018</th>
+          <th class="govuk-table__header" scope="col">Notes</th>
+          <th class="govuk-table__header" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">The morning</td>
+          <td class="govuk-table__cell">Woken at 7:30. Helped out of bed...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the day</td>
+          <td class="govuk-table__cell">Helper does everything at school - toilet, moving around...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Early evening</td>
+          <td class="govuk-table__cell">I cut up all his food. Fed himself using a spoon...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the night</td>
+          <td class="govuk-table__cell">No entry</td>
+          <td class="govuk-table__cell"><a href="/past-entries">Add Notes</a></td>
+        </tr>
+      </tbody>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">22 November 2018</th>
+          <th class="govuk-table__header" scope="col">Notes</th>
+          <th class="govuk-table__header" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">The morning</td>
+          <td class="govuk-table__cell">Woken at 7:30. Helped out of bed...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the day</td>
+          <td class="govuk-table__cell">Helper does everything at school - toilet, moving around...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Early evening</td>
+          <td class="govuk-table__cell">I cut up all his food. Fed himself using a spoon...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">During the night</td>
+          <td class="govuk-table__cell">Woke at 2:10 am - helped out of bed to toilet - 15 min...</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+    <h2 class="govuk-heading-l">Past month</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Time of the day</th>
+          <th class="govuk-table__header" scope="col">Notes</th>
+          <th class="govuk-table__header" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">98</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">122</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">126</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+    <h2 class="govuk-heading-l">Past year</h2>
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Time of the day</th>
+          <th class="govuk-table__header" scope="col">Notes</th>
+          <th class="govuk-table__header" scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">David Francis</td>
+          <td class="govuk-table__cell">1380</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Paul Farmer</td>
+          <td class="govuk-table__cell">1129</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Rita Patel</td>
+          <td class="govuk-table__cell">1539</td>
+          <td class="govuk-table__cell"><a href="/past-entries">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+</div>
+
     </div>
 </div>
 
