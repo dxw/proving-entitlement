@@ -14,6 +14,10 @@ router.get('/preferences', function (req, res) {
   res.render('preferences')
 })
 
+router.get('/confirm_account', function (req, res) {
+  res.render('confirm_account')
+})
+
 router.get('/help-guide', function (req, res) {
   res.render('help-guide')
 })
