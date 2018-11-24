@@ -10,6 +10,10 @@ router.get('/new-diary-entry', function (req, res) {
   res.render('new-diary-entry')
 })
 
+router.get('/preferences', function (req, res) {
+  res.render('preferences')
+})
+
 router.get('/help-guide', function (req, res) {
   res.render('help-guide')
 })
