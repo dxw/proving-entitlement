@@ -18,3 +18,36 @@ $govuk-global-styles: true;
 .govuk-header__container {
   border-bottom-color: #28a197;
 }
+.govuk-header__sub-navigation {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+ list-style: none;
+}
+
+.govuk-header__sub-navigation-item {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px 0;
+    border: 0;
+}
+
+.govuk-header__sub-link:link, .govuk-header__sub-link:visited {
+    // color: #ffffff;
+}
+
+.govuk-header__sub-navigation-item a {
+    font-size: 24px;
+    font-size: 1rem;
+    line-height: 1.25;
+}
+
+.govuk-header__sub-navigation-item a {
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.14286;
+    white-space: nowrap;
+}
