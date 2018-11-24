@@ -1,0 +1,58 @@
+<header class="govuk-header {{ params.classes if params.classes }}" role="banner" data-module="header"
+        {%- for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+  <div class="govuk-header__container {{ params.containerClasses | default('govuk-width-container') }}">
+
+    <div class="govuk-header__logo">
+      <a href="{{ params.homepageUrl | default('/') }}" class="govuk-header__link govuk-header__link--homepage">
+        <span class="govuk-header__logotype">
+
+          <svg
+            role="presentation"
+            focusable="false"
+            class="govuk-header__logotype-crown"
+            xmlns="http://www.w3.org/2000/svg"
+            viewbox="0 0 500 500"
+            height="30"
+            width="34"
+          >
+          <path fill="#fff" d="M0 0v361.51a251.79 251.79 0 0 0 56.18-4.78c28.56-5.93 53.55-17.28 74.3-34.79a199 199 0 0 0 39.67-44.74c6.25-9.62 23.09-40.53 22.63-39.74 27.07-46.16 61.74-50.82 147.3-17.92 19.66 7.56 31.52 7.75 39.71 3.22 7.52-4.17 14.6-13.28 24.49-31.61 2.72-5 13.13-25.27 12.79-24.61 5.74-11 10.55-19.64 15.78-28.14 15-24.37 31.7-44.06 53-60.57A23.06 23.06 0 0 1 498.53 73c.49 0 1 .08 1.47.08V0z"/>
+          <path fill="#fff" d="M500 127.18a189.45 189.45 0 0 0-27.79 35.62c-4.56 7.41-8.85 15.14-14.13 25.26.53-1-10.13 19.68-13.09 25.18-13.81 25.59-25.42 40.49-42.83 50.13-21.59 11.95-47.28 11.58-78.64-.48-37.8-14.54-60.57-19.68-73.09-18-7 1-10.76 4.13-17.77 16.09 1.26-2.15-16.34 30.16-23.76 41.57a245 245 0 0 1-48.63 54.87c-27 22.77-59 37.33-94.72 44.75A297.66 297.66 0 0 1 0 408v92h500z"/>
+            {# Fallback PNG image for older browsers.
+
+            The <image> element is a valid SVG element. In SVG, you would specify
+            the URL of the image file with the xlink:href – as we don't reference an
+            image it has no effect. It's important to include the empty xlink:href
+            attribute as this prevents versions of IE which support SVG from
+            downloading the fallback image when they don't need to.
+
+            In other browsers <image> is synonymous for the <img> tag and will be
+            interpreted as such, displaying the fallback image. #}
+            <image src="{{ params.assetsPath | default('/assets/images') }}/logotype-image.png" class="govuk-header__logotype-crown-fallback-image"></image>
+          </svg>
+          <span class="govuk-header__logotype-text">
+            SRVC
+          </span>
+        </span>
+
+        <span class="govuk-header__product-name">
+
+        </span>
+
+      </a>
+    </div>
+    <div class="govuk-header__content">
+    <a href="/" class="govuk-header__link govuk-header__link--service-name">
+      Health Diary
+    </a>
+
+    <button type="button" role="button" class="govuk-header__menu-button js-header-toggle" aria-controls="navigation" aria-label="Show or hide Top Level Navigation">Menu</button>
+    <nav>
+      <ul id="navigation" class="govuk-header__navigation" aria-label="Top Level Navigation">
+
+      </ul>
+    </nav>
+
+    </div>
+
+  </div>
+</header>

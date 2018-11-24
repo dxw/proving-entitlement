@@ -18,6 +18,10 @@ router.get('/confirm_account', function (req, res) {
   res.render('confirm_account')
 })
 
+router.get('/homepage-notification', function (req, res) {
+  res.render('homepage-notification1')
+})
+
 router.get('/help-guide', function (req, res) {
   res.render('help-guide')
 })
